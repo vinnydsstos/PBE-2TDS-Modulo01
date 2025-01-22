@@ -62,7 +62,3 @@ A interação entre essas classes deve permitir a simulação de um pedido feito
      - 5 canetas azuis.
    - O sistema deve calcular o total do pedido, exibir um resumo para o cliente e atualizar o estoque dos produtos.
 
----
-
-## Benefícios do Exercício
-Este exercício permite a prática de conceitos de orientação a objetos, como encapsulamento, composição e interação entre classes, promovendo a aplicação prática de teorias aprendidas em sala de aula.
