@@ -3,17 +3,31 @@ package Papelaria;
 public class Produto {
 
 
+
         int id;
         String nome;
         float preco;
         int quantidade_estoque;
 
     public Produto(int id, String nome, float preco, int quantidade_estoque) {
+
+    // Método Construtor
+    public Produto(int id, String nome, double preco, int quantidade_estoque) {
+
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.quantidade_estoque = quantidade_estoque;
     }
+
+
+    // Atributos
+    int id; // Números Inteiros
+    String nome; // Texto
+    double preco; // Números reais (decimais extensos)
+    int quantidade_estoque;
+
+    // Métodos
 
     public int getId() {
         return id;
@@ -31,11 +45,19 @@ public class Produto {
         this.nome = nome;
     }
 
+
     public float getPreco() {
         return preco;
     }
 
     public void setPreco(float preco) {
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+
         this.preco = preco;
     }
 
@@ -46,6 +68,7 @@ public class Produto {
     public void setQuantidade_estoque(int quantidade_estoque) {
         this.quantidade_estoque = quantidade_estoque;
     }
+
 
     public void reduzir_estoque(int quantidade){
 
@@ -62,3 +85,5 @@ public class Produto {
 }
 
 
+=======
+}
