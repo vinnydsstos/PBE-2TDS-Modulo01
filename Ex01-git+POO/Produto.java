@@ -48,10 +48,10 @@ public class Produto {
         this.quantidade_estoque = quantidade_estoque;
     }
 
-    public void reduzir_estoque() {
+    public void reduzirEstoque() {
         
     }
-    public void exibir_detalhes() {
+    public void exibirDetalhes() {
 
     }
 }
