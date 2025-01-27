@@ -1,11 +1,20 @@
+package Papelaria;
+
 public class Cliente {
 
-    //atributos
-    public int id;
-    public String Nome;
-    public String Email;
+    // Método Construtor
+    public Cliente(int id, String nome, String email) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+    }
 
-    //métodos
+    // Atributos
+    int id;
+    String nome;
+    String email;
+
+    // Métodos
     public int getId() {
         return id;
     }
@@ -15,18 +24,18 @@ public class Cliente {
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String nome) {
-        Nome = nome;
+        this.nome = nome;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 }

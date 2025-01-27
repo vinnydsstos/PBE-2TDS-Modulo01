@@ -1,6 +1,7 @@
 package Ex01;
 
 public class Cliente {
+
     int id;
     String nome;
     String email;
@@ -28,4 +29,5 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }
