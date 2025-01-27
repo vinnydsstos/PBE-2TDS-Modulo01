@@ -10,13 +10,4 @@ public class Main {
         produto1.quantidade_estoque = 200;
     }
 
-    public static void main(String[] args) {
-        System.out.println("Hello Word");
-
-
-
-    }
-
-
-
 }

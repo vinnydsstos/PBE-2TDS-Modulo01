@@ -6,8 +6,10 @@ public class Produto {
     private float preco;
     private int quantidade_estoque;
 
-    //get e set
+    public Produto(){
 
+    }
+    //get e set
 
     public int getId() {
         return id;
