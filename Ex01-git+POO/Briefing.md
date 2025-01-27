@@ -1,9 +1,11 @@
 # Situação-Problema: Sistema de Gestão de Estoque para uma Papelaria
 
 ## Contexto
+
 Uma papelaria chamada **Papel & Cia** deseja informatizar o gerenciamento de seus produtos e clientes. Atualmente, o controle de itens como cadernos, canetas e lápis é feito manualmente, o que tem causado erros no estoque e atrasos nas vendas. Para resolver esses problemas, o proprietário quer implementar um sistema simples com base em três classes principais que representem os produtos, os clientes e os pedidos realizados.
 
 ## Objetivo
+
 Criar um sistema de gerenciamento básico composto por três classes principais:
 
 1. **Produto**: Representa os itens vendidos pela papelaria.
@@ -17,7 +19,8 @@ A interação entre essas classes deve permitir a simulação de um pedido feito
 ## Dados fornecidos para construção das classes
 
 ### Classe Produto
-- **Atributos**: 
+
+- **Atributos**:
   - `id` (identificador do produto)
   - `nome` (nome do produto)
   - `preco` (preço unitário)
@@ -27,7 +30,8 @@ A interação entre essas classes deve permitir a simulação de um pedido feito
   - `exibir_detalhes()`: Mostra as informações do produto.
 
 ### Classe Cliente
-- **Atributos**: 
+
+- **Atributos**:
   - `id` (identificador do cliente)
   - `nome` (nome do cliente)
   - `email` (e-mail para contato)
@@ -35,6 +39,7 @@ A interação entre essas classes deve permitir a simulação de um pedido feito
   - `exibir_cliente()`: Mostra os dados do cliente.
 
 ### Classe Pedido
+
 - **Atributos**:
   - `id` (identificador do pedido)
   - `cliente` (objeto da classe Cliente)
@@ -47,9 +52,10 @@ A interação entre essas classes deve permitir a simulação de um pedido feito
 ---
 
 ## Resultados Esperados
+
 1. **Criar as classes com base no modelo acima.**
 2. **Simular a criação de 3 produtos, 2 clientes e 1 pedido.**
-   - **Exemplo de produtos**:  
+   - **Exemplo de produtos**:
      - Produto 1: Caderno, preço R$ 20, estoque 50 unidades.
      - Produto 2: Caneta Azul, preço R$ 3, estoque 100 unidades.
      - Produto 3: Lápis, preço R$ 1.50, estoque 200 unidades.
@@ -61,4 +67,3 @@ A interação entre essas classes deve permitir a simulação de um pedido feito
      - 2 cadernos.
      - 5 canetas azuis.
    - O sistema deve calcular o total do pedido, exibir um resumo para o cliente e atualizar o estoque dos produtos.
-
