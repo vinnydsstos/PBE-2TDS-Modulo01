@@ -33,7 +33,6 @@ public class Pedido {
 
     public void calcular_total(){
         float total;
-        total = quantidade
         System.out.println("O total do pedido foi: " + total);
     }
 }
