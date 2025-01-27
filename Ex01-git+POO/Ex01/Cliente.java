@@ -1,11 +1,10 @@
+package Ex01;
+
 public class Cliente {
+    int id;
+    String nome;
+    String email;
 
-    //atributos
-    public int id;
-    public String Nome;
-    public String Email;
-
-    //métodos
     public int getId() {
         return id;
     }
@@ -15,18 +14,18 @@ public class Cliente {
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String nome) {
-        Nome = nome;
+        this.nome = nome;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 }
