@@ -1,2 +1,5 @@
-package Papelaria;public class Cliente {
+package Papelaria;
+
+public class Cliente {
+
 }
