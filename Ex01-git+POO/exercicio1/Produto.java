@@ -47,6 +47,7 @@ public class Produto {
     }
 
     public void exibir_detalhes(){
-        System.out.println("O id do produto é:\n" + this.id + "\nO nome do produto é:\n" + this.nome + "\nO preço unitário do produto é:\n" + this.preco + "\nA quantidade disponível do produto é:\n" + this.quantidade_estoque);
+        System.out.println("Exibindo detalhes do produto...");
+        System.out.println("O id do produto é: " + this.id + "\nO nome do produto é: " + this.nome + "\nO preço unitário do produto é: " + this.preco + "\nA quantidade disponível do produto é: " + this.quantidade_estoque + "\n");
     }
 }
