@@ -54,11 +54,11 @@ public class Quarto {
     //exibir_detalhes(): Mostra os dados do quarto.
 
     public void marcar_indisponivel() {
-        if (disponivel = true) {
-            System.out.println("Quarto disponível");
-        } else {
-            System.out.println("Quarto não disponivel");
-        }
+        this.disponivel = false;
+    }
+
+    public void marcar_disponivel() {
+        this.disponivel = true;
     }
 
     public void exibir_detalhes() {
