@@ -39,6 +39,7 @@ public class Hospede {
     public void setTelefone(int telefone) {
         this.telefone = telefone;
     }
+    
 
     public void exibirHospede() {
         System.out.println("O id do hospede é: " + this.id + "\nO nome do hospede é: " + this.nome + "\nO telefone do hospede é: " + this.telefone );
