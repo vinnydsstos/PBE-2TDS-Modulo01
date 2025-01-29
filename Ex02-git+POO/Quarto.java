@@ -12,7 +12,7 @@
 public class Quarto {
     private int id;
     private String tipo;
-    private double precoDiaria;
+    private double preco_diaria;
     private boolean disponivel;
 
     //padrão
@@ -21,10 +21,10 @@ public class Quarto {
     }
 
     //com parametros
-    public Quarto(int id, String tipo, double precoDiaria, boolean disponivel) {
+    public Quarto(int id, String tipo, double preco_diaria, boolean disponivel) {
         this.id = id;
         this.tipo = tipo;
-        this.precoDiaria = precoDiaria;
+        this.preco_diaria = preco_diaria;
         this.disponivel = disponivel;
     }
 
@@ -41,7 +41,7 @@ public class Quarto {
     public void exibirDetalhes() {
         System.out.println("ID: " + id);
         System.out.println("Tipo: " + tipo);
-        System.out.println("Preço da diária: R$" + precoDiaria);
+        System.out.println("Preço da diária: R$" + preco_diaria);
         System.out.println((disponivel ? "Sim" : "Não"));
     }
 }//class
