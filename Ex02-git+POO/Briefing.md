@@ -52,7 +52,7 @@ A interação entre essas classes permitirá que os alunos simulem um processo c
 ---
 
 ## Resultados Esperados
-1. **Criação das classes pelos alunos**:
+1. **Criação das classes pelos alunos**: Karen, Raíssa e Wesley
    - Cada aluno será responsável por criar e implementar sua classe com base no modelo fornecido.
 2. **Simulação de uma reserva completa**:
    - **Exemplo de quarto**:
