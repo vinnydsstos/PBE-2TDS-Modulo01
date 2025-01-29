@@ -52,4 +52,6 @@ public class Reserva {
                 "\nDiárias: " + diarias +
                 "\nTotal: R$ " + calcularTotal();
     }
+
+    
 }
