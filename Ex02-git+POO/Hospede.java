@@ -2,13 +2,13 @@ public class Hospede {
 
     private int id;
     private String nome;
-    private int telefone;
+    private String telefone;
 
     public Hospede(){
 
     }
 
-    public Hospede(int id, String nome, int telefone){
+    public Hospede(int id, String nome, String telefone){
         this.id = id;
         this.nome = nome;
         this.telefone = telefone;
@@ -29,11 +29,11 @@ public class Hospede {
         this.nome = nome;
     }
 
-    private int getTelefone() {
+    private String getTelefone() {
         return telefone;
     }
 
-    private void setTelefone(int telefone) {
+    private void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
