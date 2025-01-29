@@ -1,54 +1,75 @@
-public class Reserva {
-    //atributos
-    private int id;
-    private Quarto quarto;
-    private Hospede hospede;
-    private int diarias;
-    //metodo construtor com parametro
-    public Reserva(int id, Quarto quarto, Hospede hospede, int diarias) {
-        this.id = id;
-        this.quarto = quarto;
+public class Reserva extends Quarto{
+    private int idReserva;
+    String hospede;
+    String quarto;
+    int diaria;
+    float precoDiaria;
+    float valorTotal;
+
+    public Reserva() {
+    }
+
+    public Reserva(int idReserva, String hospede, String quarto, int diaria, float precoDiaria) {
+        this.idReserva = idReserva;
         this.hospede = hospede;
-        this.diarias = diarias;
-    }
-    //Get & Set
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    public Quarto getQuarto() {
-        return quarto;
-    }
-    public void setQuarto(Quarto quarto) {
         this.quarto = quarto;
+        this.diaria = diaria;
+        this.precoDiaria = super.preco_diaria;
     }
-    public Hospede getHospede() {
+
+    public int getIdReserva() {
+        return idReserva;
+    }
+
+    public void setIdReserva(int idReserva) {
+        this.idReserva = idReserva;
+    }
+
+    public String getHospede() {
         return hospede;
     }
-    public void setHospede(Hospede hospede) {
+
+    public void setHospede(String hospede) {
         this.hospede = hospede;
     }
-    public int getDiarias() {
-        return diarias;
+
+    public String getQuarto() {
+        return quarto;
     }
-    public void setDiarias(int diarias) {
-        this.diarias = diarias;
+
+    public void setQuarto(String quarto) {
+        this.quarto = quarto;
     }
-    //metodos
-    public void calcular_total() {
-    reserva = getDiarias() * preco_diaria;
-        System.out.println("O valor total da reserva é de: " + reserva);
+
+    public int getDiaria() {
+        return diaria;
     }
-    public void finalizar_reserva() {
-        if (quarto != True) {
-            System.out.println("Quarto indisponível! ");
+
+    public void setDiaria(int diaria) {
+        this.diaria = diaria;
+    }
+
+    public float getPrecoDiaria() {
+        return precoDiaria;
+    }
+
+    public void setPrecoDiaria(float precoDiaria) {
+        this.precoDiaria = precoDiaria;
+    }
+
+    public void calcularTotal(float precoDiaria, int diaria) {
+        valorTotal = precoDiaria * diaria;
+    }
+
+    public void finalizarReserva() {
+        if (isDisponivel()) {
+            marcarIndisponivel(true);
+            System.out.println("Reserva finalizada o quarto " + quarto + " agora está indisponível.");
         }
-    }
-    public void exibir_resumo() {
-        System.out.println("Id da reserva: " + getId() + "\nTipo do quarto: " + getQuarto() +
-                "\nNome do cliente: " + getHospede() + "\nDiárias: " + getDiarias());
+
+
 
     }
-}//class
+}
+
+

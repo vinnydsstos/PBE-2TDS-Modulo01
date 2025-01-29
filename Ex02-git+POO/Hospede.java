@@ -1,19 +1,7 @@
-
 public class Hospede {
-
     private int id;
     private String nome;
-    private  int telefone;
-
-    public Hospede() {
-
-    }
-
-    public Hospede(int id, String nome, int telefone) {
-        this.id = id;
-        this.nome = nome;
-        this.telefone = telefone;
-    }
+    private String telefone;
 
     public int getId() {
         return id;
@@ -31,17 +19,16 @@ public class Hospede {
         this.nome = nome;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
+
+
     }
-    
-
-    public void exibirHospede() {
-        System.out.println("O id do hospede é: " + this.id + "\nO nome do hospede é: " + this.nome + "\nO telefone do hospede é: " + this.telefone );
-
+    public void exibir_hospede(){
+        System.out.println("O id do Hóspede é: " + this.id + " O nome do cliente é: " + this.nome + " O telefone do Hóspede é: " + this.telefone );
     }
 }

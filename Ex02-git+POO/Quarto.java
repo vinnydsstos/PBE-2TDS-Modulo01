@@ -1,47 +1,61 @@
-/* **Atributos**: Raíssa
-  - `id` (identificador do quarto)
-  - `tipo` (tipo do quarto, ex.: solteiro, casal, família)
-  - `preco_diaria` (preço da diária)
-  - `disponivel` (indica se o quarto está disponível: `True` ou `False`)
-- **Métodos**:
-  - `marcar_indisponivel()`: Altera o status de disponibilidade para `False`.
-  - `marcar_disponivel()`: Altera o status de disponibilidade para `True`.
-  - `exibir_detalhes()`: Mostra os dados do quarto.
-  */
+import java.net.StandardSocketOptions;
 
 public class Quarto {
-    private int id;
-    private String tipo;
-    private double preco_diaria;
-    private boolean disponivel;
 
-    //padrão
-    public Quarto(){
+    private int idQuarto;
 
+    public String tipo;
+
+    public float preco_diaria;
+
+    public boolean disponivel;
+
+    public int getIdQuarto() {
+        return idQuarto;
     }
 
-    //com parametros
-    public Quarto(int id, String tipo, double preco_diaria, boolean disponivel) {
-        this.id = id;
+    public void setIdQuarto(int idQuarto) {
+        this.idQuarto = idQuarto;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public float getPreco_diaria() {
+        return preco_diaria;
+    }
+
+    public void setPreco_diaria(float preco_diaria) {
         this.preco_diaria = preco_diaria;
+    }
+
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel) {
         this.disponivel = disponivel;
     }
 
-    //metpodos que façam os quartps estarem ou não disponíveis
-    public void marcarDisponivel() {
-        this.disponivel = true;
-    }
-    public void marcarIndisponivel() {
+    public void marcarIndisponivel(boolean disponivel) {
         this.disponivel = false;
+
     }
 
+    public void marcarDisponivel(boolean disponivel) {
+        this.disponivel = true;
 
-    //detalhes do quarto
+    }
     public void exibirDetalhes() {
-        System.out.println("ID: " + id);
-        System.out.println("Tipo: " + tipo);
-        System.out.println("Preço da diária: R$" + preco_diaria);
-        System.out.println((disponivel ? "Sim" : "Não"));
+        System.out.println("Id do quarto: " + getIdQuarto());
+        System.out.println("Tipo do quarto: " + getTipo());
+        System.out.println("Preço do quarto: " + preco_diaria);
+        System.out.println("Disponibilidade do quarto: " + disponivel);
+
     }
-}//class
+}

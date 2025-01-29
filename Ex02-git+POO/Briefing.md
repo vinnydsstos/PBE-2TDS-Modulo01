@@ -17,8 +17,8 @@ A interação entre essas classes permitirá que os alunos simulem um processo c
 ## Distribuição das Classes (Cada aluno cria uma classe)
 
 ### Classe Quarto
-- **Responsável:** 
-- **Atributos**: Raíssa
+- **Responsável:** Aluno 1
+- **Atributos**:
   - `id` (identificador do quarto)
   - `tipo` (tipo do quarto, ex.: solteiro, casal, família)
   - `preco_diaria` (preço da diária)
@@ -29,7 +29,7 @@ A interação entre essas classes permitirá que os alunos simulem um processo c
   - `exibir_detalhes()`: Mostra os dados do quarto.
 
 ### Classe Hospede
-- **Responsável:** Wesley
+- **Responsável:** Aluno 2
 - **Atributos**:
   - `id` (identificador do hóspede)
   - `nome` (nome completo do hóspede)
@@ -38,7 +38,7 @@ A interação entre essas classes permitirá que os alunos simulem um processo c
   - `exibir_hospede()`: Mostra os dados do hóspede.
 
 ### Classe Reserva
-- **Responsável:** Karen
+- **Responsável:** Aluno 3
 - **Atributos**:
   - `id` (identificador da reserva)
   - `hospede` (objeto da classe Hospede)
@@ -52,7 +52,7 @@ A interação entre essas classes permitirá que os alunos simulem um processo c
 ---
 
 ## Resultados Esperados
-1. **Criação das classes pelos alunos**: Karen, Raíssa e Wesley
+1. **Criação das classes pelos alunos**:
    - Cada aluno será responsável por criar e implementar sua classe com base no modelo fornecido.
 2. **Simulação de uma reserva completa**:
    - **Exemplo de quarto**:
