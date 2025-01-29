@@ -1,7 +1,7 @@
 public class Hospede { 
-    int id;
-    String nome;
-    int telefone;
+    private int id;
+    private String nome;
+    private int telefone;
 
     public int getId (){
         return id;
