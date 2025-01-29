@@ -54,9 +54,9 @@ public class Reserva {
         this.quarto.marcar_indisponivel();
     }
     public void  exibir_resumo(){
-        this.hospede.exibir_hospede();
-        this.quarto.exibir_detalhes();
-        System.out.println("O valor total é: " + calcular_total());
+        System.out.println("Hóspede: " + this.hospede.getNome());
+        System.out.println("Quarto: " + this.quarto.getTipo());
+        System.out.println("O valor total é: R$" + calcular_total());
     }
 
 
