@@ -4,16 +4,16 @@ public class Produto {
     int id;
     String nome;
     float preco;
-    int quantidade_estoque;
+    int quantidadeEstoque;
 
     public Produto() {
     }
 
-    public Produto(int id, String nome, float preco, int quantidade_estoque) {
+    public Produto(int id, String nome, float preco, int quantidadeEstoque) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
-        this.quantidade_estoque = quantidade_estoque;
+        this.quantidadeEstoque = quantidadeEstoque;
     }
 
     public int getId() {
@@ -40,11 +40,33 @@ public class Produto {
         this.preco = preco;
     }
 
-    public int getQuantidade_estoque() {
-        return quantidade_estoque;
+    public int getQuantidadeEstoque() {
+        return quantidadeEstoque;
     }
 
-    public void setQuantidade_estoque(int quantidade_estoque) {
-        this.quantidade_estoque = quantidade_estoque;
+    public void setQuantidadeEstoque(int quantidadeEstoque) {
+        this.quantidadeEstoque = quantidadeEstoque;
+    }
+
+    public void reduzirEstoque(int quantidadeReduzida) {
+        if (quantidadeReduzida > 0) {
+            if (quantidadeReduzida <= quantidadeEstoque) {
+                quantidadeEstoque -= quantidadeReduzida;
+                System.out.println("Estoque reduzido em " + quantidadeReduzida + ". Novo estoque: " + quantidadeEstoque);
+            } else {
+                System.out.println("Erro: Quantidade a ser reduzida é maior do que o estoque disponível.");
+            }
+        } else {
+            System.out.println("Erro: A quantidade a ser reduzida deve ser maior que zero.");
+        }
+    }
+
+    public void exibirDetalhes() {
+        System.out.println(this);
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + id + "\nNome: " + nome + "\nPreço: " + preco + "\nQuantidade: " + quantidadeEstoque;
     }
 }
