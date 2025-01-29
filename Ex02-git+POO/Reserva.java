@@ -45,15 +45,18 @@ public class Reserva {
     public void setDiaria(int diaria) {
         this.diaria = diaria;
     }
-    public void calcular_total(){
-        float valor;
+    public float calcular_total(){
+        float valor = 0;
         valor = this.diaria * this.quarto.getPreco_diaria();
+        return valor;
     }
     public void  finalizar_reserva(){
-        this.quarto
+        this.quarto.marcar_indisponivel();
     }
     public void  exibir_resumo(){
-        System.out.println("O valor total é: " + valor);
+        this.hospede.exibir_hospede();
+        this.quarto.exibir_detalhes();
+        System.out.println("O valor total é: " + calcular_total());
     }
 
 
