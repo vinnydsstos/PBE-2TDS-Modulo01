@@ -1,4 +1,3 @@
-package wesley;
 
 public class Hospede {
 
