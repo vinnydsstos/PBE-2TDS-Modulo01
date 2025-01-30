@@ -5,8 +5,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Ex01-git+POO" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Ex02-git+POO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ex03-java+servlets" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jakarta.servlet-api-6.1.0" level="project" />
   </component>
 </module>
