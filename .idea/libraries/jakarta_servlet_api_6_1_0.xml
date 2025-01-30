@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jakarta.servlet-api-6.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Ex03-java+servlets/web/WEB-INF/lib/jakarta.servlet-api-6.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

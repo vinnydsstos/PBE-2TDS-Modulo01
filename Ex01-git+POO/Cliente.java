@@ -1,19 +1,36 @@
-public class Cliente{
-    int id;
-    String nome;
-    String email;
+package exercicio1;
 
-    Cliente(){
+public class Cliente {
+    private int id;
+    private String nome;
+    private String email;
 
-        Cliente(int id, String nome, String email){
-            this.id = id;
-            this.nome = nome;
-            this.email = email;
-        }
+    public int getId(){
+        return id;
+    }
 
-        public void exibir_cliente(){
-            System.out.println("ID: " + id + "\n"+"Nome: " + nome + "\n"+"Email: " + email);
-        }
+    public void setId(int id){
+        this.id = id;
+    }
 
+    public String getNome(){
+        return nome;
+    }
 
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    //outro metodo
+    public void exibir_cliente(){
+        System.out.println("O id do cliente é:\n" + this.id + "\nO nome do cliente é:\n" + this.nome + "\nO email do cliente é:\n" + this.email);
+    }
 }
